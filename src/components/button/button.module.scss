@@ -1,0 +1,18 @@
+@import 'src/styles/colors.scss';
+
+.button-container {
+  height: 3.3rem;
+  padding-inline: 2rem;
+  font-family: 'josefin-sans-m';
+  font-size: 1.2rem;
+}
+.theme-primary {
+  border: none;
+  background: $primary_300;
+  color: white;
+}
+.theme-secondary {
+  border: 2px solid $primary_300;
+  background: white;
+  color: $primary_300;
+}

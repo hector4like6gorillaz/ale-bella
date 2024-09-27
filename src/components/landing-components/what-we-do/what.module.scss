@@ -1,0 +1,35 @@
+@import 'src/styles/colors.scss';
+
+.container-we-do {
+  background: white;
+  padding-inline: 15rem;
+  padding-block: 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.p-title {
+  font-family: 'prata';
+  color: $primary_300;
+  font-size: 2rem;
+}
+.p-content {
+  font-family: 'josefin-sans-m';
+  font-size: 2rem;
+}
+
+.cards-square {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.sizedbox-heigth {
+  height: 3rem;
+}
+
+.div-container-center-button {
+  display: flex;
+  justify-content: center;
+}

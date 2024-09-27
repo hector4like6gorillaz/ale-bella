@@ -1,0 +1,85 @@
+@import './colors.scss';
+@import './wordArt.scss';
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+* {
+  font-family: 'josefin-sans-l';
+  padding: 0;
+  margin: 0;
+}
+
+$navbar_height: 56px;
+$sidebar_width: 285px;
+
+button {
+  cursor: pointer;
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary_300;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $primary_300;
+}
+th,
+td {
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 18px !important;
+}
+th {
+  color: $primary_200 !important;
+}
+td {
+  color: $primary_600 !important;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  background-color: $primary_25;
+  color: $primary_400;
+  border-radius: 0 !important;
+  border-bottom: 1px solid $primary_300;
+}
+.ant-collapse-header-text {
+  margin-top: 5px;
+}
+
+.ant-list {
+  border-top: 1px solid $neutral_25;
+}
+
+.ListTitles {
+  color: $primary_200;
+}

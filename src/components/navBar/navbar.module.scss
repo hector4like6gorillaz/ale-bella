@@ -1,0 +1,74 @@
+@import 'src/styles/colors.scss';
+
+.container-navbar {
+  background: white;
+  height: 6rem;
+  z-index: 10;
+  padding-inline: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-menu-option {
+  font-weight: 400;
+  font-family: 'prata';
+  cursor: pointer;
+}
+.p-menu-option:hover {
+  color: $primary_300;
+}
+.p-menu-option-selected {
+  color: $primary_300;
+}
+
+.container-options-menu {
+  display: none;
+}
+
+.img-logo-container {
+  //border: 1px solid;
+  width: 10rem;
+  height: 5rem;
+}
+
+.img-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.burguer-div {
+  cursor: pointer;
+}
+.icon-bars {
+  width: 3rem;
+}
+
+@media (min-width: 0) and (max-width: 599px) {
+}
+@media (min-width: 600px) and (max-width: 1199px) {
+}
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .burguer-div {
+    display: none;
+  }
+  .container-navbar {
+    padding-inline: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .img-logo-container {
+    border: 1px solid;
+    width: 15rem;
+    height: 100%;
+  }
+  .container-options-menu {
+    display: flex;
+    font-size: 1.3rem;
+    column-gap: 2rem;
+    align-items: center;
+  }
+}
+@media (min-width: 1920px) {
+}

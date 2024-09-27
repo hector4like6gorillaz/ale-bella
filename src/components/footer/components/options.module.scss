@@ -1,0 +1,27 @@
+@import 'src/styles/colors.scss';
+
+.option-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding-block: 2rem;
+}
+
+.p-title {
+  color: $primary_300;
+  font-family: 'prata';
+  font-size: 1.2rem;
+}
+.p-option {
+  font-size: 1rem;
+  cursor: pointer;
+}
+.p-option:hover {
+  color: $primary_300;
+}
+
+.p-option-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}

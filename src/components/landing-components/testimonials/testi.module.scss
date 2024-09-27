@@ -1,0 +1,31 @@
+@import 'src/styles/colors.scss';
+
+.container-testimonials {
+  background: $primary_300;
+  padding-inline: 15rem;
+  padding-block: 4rem;
+}
+.div-container-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  width: 70%;
+}
+
+.h2-title {
+  color: white;
+  font-family: 'prata';
+  font-size: 2rem;
+}
+.p-content {
+  color: white;
+  font-family: 'josefin-sans-l';
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.p-name {
+  color: white;
+  font-family: 'josefin-sans-l';
+  font-size: 1.5rem;
+}

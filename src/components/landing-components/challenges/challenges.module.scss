@@ -1,0 +1,54 @@
+@import 'src/styles/colors.scss';
+
+.challenge-div-container {
+  background: white;
+  padding-inline: 15rem;
+  padding-bottom: 15rem;
+  padding-top: 4rem;
+  display: flex;
+  //border: 1px solid;
+  position: relative;
+}
+
+.div-kids {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  padding-inline: 2rem;
+}
+.div-kids-left {
+  row-gap: 8rem;
+}
+.div-kids-rigth {
+  row-gap: 10rem;
+  padding-top: 8.8rem;
+}
+
+.div-container-info {
+  //border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  width: 70%;
+}
+.p-title {
+  color: $primary_300;
+  font-family: 'josefin-sans-m';
+  font-size: 1.5rem;
+}
+.p-subtitle {
+  font-size: 2rem;
+  font-family: 'josefin-sans-m';
+}
+.p-content {
+  font-size: 1.5rem;
+  font-family: 'josefin-sans-l';
+  line-height: 2.2rem;
+}
+
+.wave-position {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

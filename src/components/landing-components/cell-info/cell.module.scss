@@ -1,0 +1,44 @@
+@import 'src/styles/colors.scss';
+
+.container-all-cell {
+  display: flex;
+  background: white;
+  padding-block: 2rem;
+}
+
+.container-kid {
+  height: 40rem;
+  width: 50%;
+}
+.container-kid-left {
+  padding-left: 15rem;
+}
+.container-kid-right {
+  padding-right: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2.5rem;
+}
+
+.container-video-play {
+  height: 100%;
+}
+
+.video-label {
+  height: 100%;
+}
+
+.p-title-primary {
+  color: $primary_300;
+  font-size: 1.5rem;
+  font-family: 'prata';
+}
+.p-sub-title-primary {
+  font-size: 2.2rem;
+  font-family: 'josefin-sans-m';
+}
+.p-sub-title-content {
+  font-size: 1.5rem;
+  font-family: 'josefin-sans-l';
+}

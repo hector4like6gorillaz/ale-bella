@@ -1,0 +1,31 @@
+@import './colors.scss';
+
+//Alkatra
+@font-face {
+  font-family: 'josefin-sans-l';
+  src:
+    local('Josefin'),
+    url('../assets/fonts/Josefin_Sans/static/JosefinSans-Light.ttf') format('OpenType');
+  //font-weight: 700;
+}
+@font-face {
+  font-family: 'josefin-sans-m';
+  src:
+    local('Josefin'),
+    url('../assets/fonts/Josefin_Sans/static/JosefinSans-Medium.ttf') format('OpenType');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'josefin-sans-b';
+  src:
+    local('Josefin'),
+    url('../assets/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf') format('OpenType');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'prata';
+  src:
+    local('Prata'),
+    url('../assets/fonts/Prata/Prata-Regular.ttf') format('OpenType');
+  font-weight: 700;
+}
