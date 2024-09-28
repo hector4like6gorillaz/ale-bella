@@ -23,13 +23,10 @@ const LandingModule = () => {
           <OurDescription />
           <div className={`${style['transparent-container']}`}></div>
           <WhatWeDo />
-          {/*
-          me quede en el what we do
           <CellPhonesInfo />
           <Challenges />
           <Testimonial />
           <Contact />
-          */}
         </div>
       </Fragment>
     </MainLayout>

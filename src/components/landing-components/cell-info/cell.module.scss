@@ -4,17 +4,19 @@
   display: flex;
   background: white;
   padding-block: 2rem;
+  flex-direction: column;
 }
 
 .container-kid {
-  height: 40rem;
-  width: 50%;
+  height: 30rem;
+  width: 100%;
 }
 .container-kid-left {
-  padding-left: 15rem;
+  padding-left: 1rem;
 }
 .container-kid-right {
-  padding-right: 15rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,6 +29,7 @@
 
 .video-label {
   height: 100%;
+  width: 100%;
 }
 
 .p-title-primary {
@@ -35,10 +38,41 @@
   font-family: 'prata';
 }
 .p-sub-title-primary {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-family: 'josefin-sans-m';
 }
 .p-sub-title-content {
   font-size: 1.5rem;
   font-family: 'josefin-sans-l';
+}
+
+@media (min-width: 0) and (max-width: 599px) {
+}
+@media (min-width: 600px) and (max-width: 1199px) {
+}
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .container-all-cell {
+    padding-block: 2rem;
+    flex-direction: row;
+  }
+  .container-kid {
+    height: 40rem;
+    width: 50%;
+  }
+  .container-kid-left {
+    padding-left: 15rem;
+  }
+  .container-kid-right {
+    padding-left: 0rem;
+    padding-right: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2.5rem;
+  }
+  .p-sub-title-primary {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 1920px) {
 }

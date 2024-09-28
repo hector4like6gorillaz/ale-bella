@@ -2,7 +2,7 @@
 
 .container-we-do {
   background: white;
-  padding-inline: 15rem;
+  padding-inline: 1rem;
   padding-block: 3rem;
   display: flex;
   flex-direction: column;
@@ -12,24 +12,53 @@
 .p-title {
   font-family: 'prata';
   color: $primary_300;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .p-content {
   font-family: 'josefin-sans-m';
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .cards-square {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .sizedbox-heigth {
-  height: 3rem;
 }
 
 .div-container-center-button {
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 0) and (max-width: 599px) {
+}
+@media (min-width: 600px) and (max-width: 1199px) {
+}
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .container-we-do {
+    padding-inline: 15rem;
+    padding-block: 3rem;
+  }
+  .p-title {
+    font-family: 'prata';
+    color: $primary_300;
+    font-size: 2rem;
+  }
+  .p-content {
+    font-family: 'josefin-sans-m';
+    font-size: 2rem;
+  }
+  .sizedbox-heigth {
+    height: 3rem;
+  }
+  .cards-square {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    column-gap: 2rem;
+  }
+}
+@media (min-width: 1920px) {
 }
