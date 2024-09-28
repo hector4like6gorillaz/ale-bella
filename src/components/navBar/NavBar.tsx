@@ -14,22 +14,24 @@ const NavBar = () => {
   ]
 
   return (
-    <div className={`${style['container-navbar']}`}>
-      <div className={`${style['img-logo-container']}`}>
-        <img src={logo} className={`${style['img-logo']}`} />
-      </div>
-      <div className={`${style['container-options-menu']}`}>
-        {menu.map((item, index) => {
-          return (
-            <Fragment key={index}>
-              <p className={`${style['p-menu-option']}`}>{item.name} </p>
-            </Fragment>
-          )
-        })}
-        <Button label='Contact Us' theme='secondary' />
-      </div>
-      <div className={`${style['burguer-div']}`}>
-        <Bars3Icon className ={`${style['icon-bars']}`}/>
+    <div className ={`${style['big-container']}`}>
+      <div className={`${style['container-navbar']}`}>
+        <div className={`${style['img-logo-container']}`}>
+          <img src={logo} className={`${style['img-logo']}`} />
+        </div>
+        <div className={`${style['container-options-menu']}`}>
+          {menu.map((item, index) => {
+            return (
+              <Fragment key={index}>
+                <p className={`${style['p-menu-option']}`}>{item.name} </p>
+              </Fragment>
+            )
+          })}
+          <Button label='Contact Us' theme='secondary' />
+        </div>
+        <div className={`${style['burguer-div']}`}>
+          <Bars3Icon className={`${style['icon-bars']}`} />
+        </div>
       </div>
     </div>
   )

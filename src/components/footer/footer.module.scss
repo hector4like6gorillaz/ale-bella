@@ -1,5 +1,10 @@
 @import 'src/styles/colors.scss';
 
+.big-container {
+  background: white;
+  display: flex;
+  justify-content: center;
+}
 .footer-container {
   background: white;
   padding-inline: 1rem;
@@ -94,4 +99,30 @@
   }
 }
 @media (min-width: 1920px) {
+  .footer-container {
+    width: 100%;
+    max-width: 1500px;
+  }
+  .div-all-top-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo-footer-container {
+    width: 12rem;
+    height: 6rem;
+  }
+  .div-left-container {
+    width: 40%;
+    row-gap: 2rem;
+  }
+  .container-options {
+    display: flex;
+    column-gap: 3rem;
+  }
+  .p-derechos {
+    font-size: 0.8rem;
+  }
+  .social-media {
+    justify-content: end;
+  }
 }

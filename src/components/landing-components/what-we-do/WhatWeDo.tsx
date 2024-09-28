@@ -38,24 +38,26 @@ const cards = [
 
 const WhatWeDo = () => {
   return (
-    <div className={`${style['container-we-do']}`}>
-      <p className={`${style['p-title']}`}>What We Do</p>
-      <p className={`${style['p-content']}`}>
-        We optimize the presence of your business across all platforms to connect with customers and
-        drive exceptional growth.
-      </p>
-      <div className={`${style['sizedbox-heigth']}`}></div>
-      <div className={`${style['cards-square']}`}>
-        {cards.map((item, index) => {
-          return (
-            <Fragment key={index + item.contain}>
-              <WhatCard title={item.title} Icon={item.icon} contain={item.contain} />
-            </Fragment>
-          )
-        })}
-      </div>
-      <div className={`${style['div-container-center-button']}`}>
-        <Button label="Let's chat" />
+    <div className ={`${style['big-container']}`}>
+      <div className={`${style['container-we-do']}`}>
+        <p className={`${style['p-title']}`}>What We Do</p>
+        <p className={`${style['p-content']}`}>
+          We optimize the presence of your business across all platforms to connect with customers
+          and drive exceptional growth.
+        </p>
+        <div className={`${style['sizedbox-heigth']}`}></div>
+        <div className={`${style['cards-square']}`}>
+          {cards.map((item, index) => {
+            return (
+              <Fragment key={index + item.contain}>
+                <WhatCard title={item.title} Icon={item.icon} contain={item.contain} />
+              </Fragment>
+            )
+          })}
+        </div>
+        <div className={`${style['div-container-center-button']}`}>
+          <Button label="Let's chat" />
+        </div>
       </div>
     </div>
   )

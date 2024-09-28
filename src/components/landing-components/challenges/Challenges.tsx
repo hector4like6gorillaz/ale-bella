@@ -25,33 +25,37 @@ let contentRight = [
 
 const Challenges = () => {
   return (
-    <div className={`${style['challenge-div-container']}`}>
-      <div className={`${style['div-kids']} ${style['div-kids-left']}`}>
-        <div className={`${style['div-container-info']}`}>
-          <p className={`${style['p-title']}`}>Insights</p>
-          <p className={`${style['p-subtitle']}`}>Strategic Challenges. Creative Opportunities.</p>
-          <p className={`${style['p-content']}`}>
-            A strong connection needs a solid foundation. We leverage a deep understanding of
-            consumer behavior and digital channels to create change that's sustainable.
-          </p>
-        </div>
+    <div className={`${style['big-container']}`}>
+      <div className={`${style['challenge-div-container']}`}>
+        <div className={`${style['div-kids']} ${style['div-kids-left']}`}>
+          <div className={`${style['div-container-info']}`}>
+            <p className={`${style['p-title']}`}>Insights</p>
+            <p className={`${style['p-subtitle']}`}>
+              Strategic Challenges. Creative Opportunities.
+            </p>
+            <p className={`${style['p-content']}`}>
+              A strong connection needs a solid foundation. We leverage a deep understanding of
+              consumer behavior and digital channels to create change that's sustainable.
+            </p>
+          </div>
 
-        {contentLeft.map((item, index) => {
-          return (
-            <Fragment key={index + item.subtitle}>
-              <CardChallenge content={item} />
-            </Fragment>
-          )
-        })}
-      </div>
-      <div className={`${style['div-kids']} ${style['div-kids-rigth']}`}>
-        {contentRight.map((item, index) => {
-          return (
-            <Fragment key={index + item.subtitle}>
-              <CardChallenge content={item} />
-            </Fragment>
-          )
-        })}
+          {contentLeft.map((item, index) => {
+            return (
+              <Fragment key={index + item.subtitle}>
+                <CardChallenge content={item} />
+              </Fragment>
+            )
+          })}
+        </div>
+        <div className={`${style['div-kids']} ${style['div-kids-rigth']}`}>
+          {contentRight.map((item, index) => {
+            return (
+              <Fragment key={index + item.subtitle}>
+                <CardChallenge content={item} />
+              </Fragment>
+            )
+          })}
+        </div>
       </div>
       <Wave className={`${style['wave-position']}`} color={'#5670f5'} />
     </div>

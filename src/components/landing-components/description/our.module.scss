@@ -1,3 +1,8 @@
+.big-container {
+  background: white;
+  display: flex;
+  justify-content: center;
+}
 .container-our {
   padding-inline: 1rem;
   padding-top: 2rem;
@@ -28,7 +33,7 @@
   height: 7.5rem;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   justify-self: center;
 }
 
@@ -60,4 +65,22 @@
   }
 }
 @media (min-width: 1920px) {
+  .container-our {
+    padding-top: 2rem;
+    row-gap: 3rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    max-width: 1500px;
+  }
+  .p-container-text {
+    font-size: 2rem;
+  }
+  .marcas-work {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mark-container {
+    width: 15rem;
+    height: 7.5rem;
+  }
 }

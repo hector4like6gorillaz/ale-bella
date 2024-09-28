@@ -1,3 +1,8 @@
+.big-container {
+  background: white;
+  display: flex;
+  justify-content: center;
+}
 .video-container {
   height: 22rem;
   position: relative;
@@ -65,6 +70,7 @@
 @media (min-width: 1200px) and (max-width: 1919px) {
   .video-container {
     height: 48rem;
+    width: 100%;
   }
   .container-black-transparent {
     padding-inline: 15rem;
@@ -82,4 +88,22 @@
   }
 }
 @media (min-width: 1920px) {
+  .video-container {
+    height: 48rem;
+    width: 100%;
+  }
+  .container-black-transparent {
+    padding-inline: 15rem;
+    padding-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    row-gap: 1rem;
+  }
+  .font-size-title {
+    font-size: 2rem;
+  }
+  .font-size-subTitles {
+    font-size: 5rem;
+  }
 }

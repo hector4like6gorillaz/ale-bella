@@ -1,5 +1,11 @@
 @import 'src/styles/colors.scss';
 
+.big-container {
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+
 .container-we-do {
   background: white;
   padding-inline: 1rem;
@@ -61,4 +67,27 @@
   }
 }
 @media (min-width: 1920px) {
+  .container-we-do {
+    width: 100%;
+    max-width: 1500px;
+    padding-block: 3rem;
+  }
+  .p-title {
+    font-family: 'prata';
+    color: $primary_300;
+    font-size: 2rem;
+  }
+  .p-content {
+    font-family: 'josefin-sans-m';
+    font-size: 2rem;
+  }
+  .sizedbox-heigth {
+    height: 3rem;
+  }
+  .cards-square {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    column-gap: 2rem;
+  }
 }

@@ -1,5 +1,11 @@
 @import 'src/styles/colors.scss';
 
+.big-container {
+  background: $primary_300;
+  display: flex;
+  justify-content: center;
+}
+
 .container-testimonials {
   background: $primary_300;
   padding-inline: 1rem;
@@ -54,4 +60,23 @@
   }
 }
 @media (min-width: 1920px) {
+  .container-testimonials {
+    width: 100%;
+    max-width: 1500px;
+    padding-block: 4rem;
+  }
+  .div-container-info {
+    row-gap: 2rem;
+    width: 70%;
+  }
+  .h2-title {
+    font-size: 2rem;
+  }
+  .p-content {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .p-name {
+    font-size: 1.5rem;
+  }
 }

@@ -1,5 +1,12 @@
 @import 'src/styles/colors.scss';
 
+.big-container {
+  background: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
 .challenge-div-container {
   background: white;
   padding-inline: 1rem;
@@ -45,6 +52,7 @@
 }
 
 .wave-position {
+  z-index: 100;
   position: absolute;
   left: 0;
   right: 0;
@@ -91,4 +99,40 @@
   }
 }
 @media (min-width: 1920px) {
+  .big-container {
+   padding-bottom: 10rem;
+  }
+  .challenge-div-container {
+    background: white;
+    width: 100%;
+    max-width: 1500px;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .div-kids {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding-inline: 2rem;
+  }
+  .div-kids-left {
+    row-gap: 8rem;
+  }
+  .div-kids-rigth {
+    row-gap: 10rem;
+    padding-top: 8.8rem;
+  }
+  .div-container-info {
+    //border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .p-subtitle {
+    font-size: 2rem;
+  }
+  .wave-position {
+    bottom: 0;
+  }
 }

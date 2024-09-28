@@ -1,7 +1,11 @@
 @import 'src/styles/colors.scss';
 
-.container-navbar {
+.big-container {
   background: white;
+  display: flex;
+  justify-content: center;
+}
+.container-navbar {
   height: 6rem;
   z-index: 10;
   padding-inline: 1rem;
@@ -26,7 +30,7 @@
   display: none;
 }
 
-.img-logo-container {  
+.img-logo-container {
   width: 10rem;
   height: 5rem;
 }
@@ -69,4 +73,24 @@
   }
 }
 @media (min-width: 1920px) {
+  .burguer-div {
+    display: none;
+  }
+  .container-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1500px;
+  }
+  .img-logo-container {
+    width: 15rem;
+    height: 100%;
+  }
+  .container-options-menu {
+    display: flex;
+    font-size: 1.3rem;
+    column-gap: 2rem;
+    align-items: center;
+  }
 }
