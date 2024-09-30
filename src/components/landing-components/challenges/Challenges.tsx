@@ -57,7 +57,7 @@ const Challenges = () => {
           })}
         </div>
       </div>
-      <Wave className={`${style['wave-position']}`} color={'#5670f5'} />
+      <Wave className={`${style['wave-position']}`} color={'#fdb4bf'} />
     </div>
   )
 }
