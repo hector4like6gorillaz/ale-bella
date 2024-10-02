@@ -6,19 +6,16 @@ const OurDescription = () => {
   return (
     <div className={`${style['big-container']}`}>
       <div className={`${style['container-our']}`}>
+        <h2 className={`${style['h2-title']}`}>WHO WE ARE</h2>
         <p className={`${style['p-container-text']}`}>
-          C/C/G is a full-service digital marketing agency. Strategically focused and creatively
-          driven, we unlock innovative solutions that connect our clients to their customers.
+          We are Ale-Bella, a full-service agency based in Los Angeles. Founded by Alexa and
+          Isabella, we have created tailored marketing strategies for clients globally to bring our
+          expertise to more markets.
         </p>
 
-        <p className={`${style['p-container-text']}`}>
-          Located in Los Angeles, a team comprised of creative disciplines in advertising, design,
-          and branding. Our agency size and philosophy allow us to create performance marketing
-          campaigns for startups and enterprise companies.
-        </p>
         <div className={`${style['container-buttons']}`}>
           <Button label='Get in touch' />
-          <Button label='Video reel' theme='secondary' />
+          <Button label='OUR STORY' theme='secondary' />
         </div>
         <div className={`${style['marcas-work']}`}>
           {Array.from({ length: 4 }, (_, index) => {

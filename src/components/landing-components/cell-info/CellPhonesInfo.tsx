@@ -4,7 +4,7 @@ import video from 'src/assets/video/limon.mp4'
 
 const CellPhonesInfo = () => {
   return (
-    <div className ={`${style['big-container']}`}>
+    <div className={`${style['big-container']}`}>
       <div className={`${style['container-all-cell']}`}>
         <div className={`${style['container-kid']} ${style['container-kid-left']}`}>
           <div className={`${style['container-video-play']}`}>
@@ -14,16 +14,15 @@ const CellPhonesInfo = () => {
           </div>
         </div>
         <div className={`${style['container-kid']} ${style['container-kid-right']}`}>
-          <p className={`${style['p-title-primary']}`}>Transforming Direct to Consumer Sales</p>
+          <p className={`${style['p-title-primary']}`}>Are you ready to take the next step?</p>
           <p className={`${style['p-sub-title-primary']}`}>
-            We are building sustainable brand growth through omnichannel campaigns.
+            Don’t Wait Longer and Elevate Your Digital Presence
           </p>
           <p className={`${style['p-sub-title-content']}`}>
-            As the world evolves, so do our capabilities. Our model is strategically built to work
-            with organizations of all sizes
+            We help you reach your digital marketing goals with unique strategies
           </p>
           <div>
-            <Button label='Learn more' theme='secondary' />
+            <Button label='Free Consultation' theme='secondary' />
           </div>
         </div>
       </div>

@@ -13,34 +13,82 @@ const cards = [
   {
     icon: BuildingLibraryIcon,
     title: 'Social Media',
-    contain:
-      'Expand the reach of consumer packaged good brands to transform content into customers. Build a connection that spans devices and delivers results.',
+    contain: [
+      'Build or enhance your social media from the ground up.',
+      'Fully managed by our in-house team.',
+      'Designed to deeply engage and grow your audience.',
+    ],
   },
   {
     icon: DeviceTabletIcon,
-    title: 'Paid Media',
-    contain:
-      'From the tried and true social media platforms to the newest to launch, we build digital social experiences that will connect and captivate consumers for the entire journey.',
+    title: 'Content Creation',
+    contain: [
+      'Create captivating content that drives interest and conversions.',
+      'Managed entirely by our creative professionals.',
+      'Aimed to tell your brand’s story in a compelling way.',
+    ],
   },
   {
     icon: LightBulbIcon,
     title: 'Branding & Communication',
-    contain:
-      "We help clients develop a clear point of view, distinct voice, and unique visual identity that unifies their brand and stands out in consumers' minds.",
+    contain: [
+      'Develop targeted email campaigns that resonate with your audience.',
+      'Leveraged by AI for enhanced engagement and relevance.',
+      'Crafted to seamlessly integrate with broader marketing goals.',
+    ],
   },
   {
     icon: EyeDropperIcon,
-    title: 'Content Creation',
-    contain:
-      'We will handle the content pipeline from start to finish with all the tools, from a custom studio to a lengthy list of curated influencers. Starting with concept design and creative execution, we will create top-performing content tailored to your brand and each platform.',
+    title: 'Website Development',
+    contain: [
+      'Develop intuitive, AI-driven websites tailored for both users and your team.',
+      'Optimized for performance and aligned with your business needs.',
+      'Ensure a smooth and engaging online experience for all visitors.',
+    ],
+  },
+  {
+    icon: LightBulbIcon,
+    title: 'SEO (Search Engine Optimization)',
+    contain: [
+      'Boost your visibility in search engine results.',
+      'Utilize AI-driven strategies for sustainable growth.',
+      'Focus on delivering long-term value and visibility.',
+    ],
+  },
+  {
+    icon: EyeDropperIcon,
+    title: 'Paid Advertising',
+    contain: [
+      'Execute highly targeted ad campaigns optimized by AI.',
+      'Achieve superior ROI through precise, data-driven strategies.',
+      'Customized to meet your specific market and business goals.',
+    ],
+  },
+  {
+    icon: LightBulbIcon,
+    title: 'Online Reputation Management',
+    contain: [
+      'Employ AI to proactively manage and safeguard your online reputation.',
+      'Transform insights into actionable strategies to enhance your public image.',
+      'Continuously monitor and respond to the digital landscape.',
+    ],
+  },
+  {
+    icon: EyeDropperIcon,
+    title: 'Analytics and Data Analysis',
+    contain: [
+      'Utilize AI-enhanced tools to gain precise insights into performance and ROI.',
+      'Understand customer behavior and predict trends.',
+      'Continuously refine and optimize your strategies based on solid data.',
+    ],
   },
 ]
 
 const WhatWeDo = () => {
   return (
-    <div className ={`${style['big-container']}`}>
+    <div className={`${style['big-container']}`}>
       <div className={`${style['container-we-do']}`}>
-        <p className={`${style['p-title']}`}>What We Do</p>
+        <p className={`${style['p-title']}`}>Services</p>
         <p className={`${style['p-content']}`}>
           We optimize the presence of your business across all platforms to connect with customers
           and drive exceptional growth.
@@ -49,7 +97,7 @@ const WhatWeDo = () => {
         <div className={`${style['cards-square']}`}>
           {cards.map((item, index) => {
             return (
-              <Fragment key={index + item.contain}>
+              <Fragment key={index + item.contain.join()}>
                 <WhatCard title={item.title} Icon={item.icon} contain={item.contain} />
               </Fragment>
             )

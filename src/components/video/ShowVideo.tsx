@@ -4,7 +4,7 @@ import Wave from 'src/assets/hondas/Wave'
 
 const ShowVideo = ({ showWave = true }: { showWave?: boolean }) => {
   return (
-    <div className ={`${style['big-container']}`}>
+    <div className={`${style['big-container']}`}>
       <div className={`${style['video-container']}`}>
         <div className={`${style['container-video-play']}`}>
           <video className={`${style['video-label']}`} autoPlay muted loop>
@@ -14,17 +14,13 @@ const ShowVideo = ({ showWave = true }: { showWave?: boolean }) => {
         {showWave && <Wave className={`${style['bottom-class-wave']}`} />}
         <div className={`${style['container-black-transparent']}`}>
           <h4 className={`${style['font-color']} ${style['font-size-title']}`}>
-            Full Service Digital Agency
+            ARE YOU A BUSINESS OWNER?
           </h4>
+          <h2 className={`${style['font-color']} ${style['font-size-subTitles']}`}>WE GET YOUR</h2>
           <h2 className={`${style['font-color']} ${style['font-size-subTitles']}`}>
-            Driving Sales
+            ONLINE PRESENCE
           </h2>
-          <h2 className={`${style['font-color']} ${style['font-size-subTitles']}`}>
-            Through Social
-          </h2>
-          <h2 className={`${style['font-color']} ${style['font-size-subTitles']}`}>
-            Media Marketing
-          </h2>
+          <h2 className={`${style['font-color']} ${style['font-size-subTitles']}`}>INCREASED</h2>
         </div>
       </div>
     </div>
