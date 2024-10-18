@@ -11,8 +11,6 @@ import Challenges from 'src/components/landing-components/challenges/Challenges'
 import Testimonial from 'src/components/landing-components/testimonials/Testimonial'
 import Contact from 'src/components/landing-components/contact/Contact'
 import PictureBackground from 'src/components/girlsBackground/PictureBackground'
-import { getPokemonById } from 'src/services/pokemon/pokemon-services'
-import { IPokeInfo } from 'src/interfaces/pokemon-interface'
 
 const LandingModule = () => {
   return (
