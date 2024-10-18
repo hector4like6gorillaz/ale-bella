@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NormalRoute from './NormalRoute'
 import PrivateRoute from './PrivateRoute'
 import LandingModule from 'src/pages/landing/LandingModule'
+import ServicesModule from 'src/pages/services/ServicesModule'
 
 const Router = () => {
   return (
@@ -9,6 +10,7 @@ const Router = () => {
       <Routes>
         <Route element={<NormalRoute />}>
           <Route path='/' element={<LandingModule />} />
+          <Route path='/services' element={<ServicesModule />} />
         </Route>
 
         <Route element={<PrivateRoute />}>

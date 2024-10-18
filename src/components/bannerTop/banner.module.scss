@@ -1,0 +1,57 @@
+@import 'src/styles/colors.scss';
+
+.container-banner-top {
+  height: 35rem;
+  position: relative;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.background-black-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  background-color: rgb(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 15rem;
+}
+
+.div-titles-container {
+  width: 100%;
+  max-width: 1500px;
+}
+
+.p-title {
+  color: white;
+  font-family: 'prata';
+  font-size: 1.5rem;
+  color: $primary_300;
+}
+
+.h3-title {
+  color: white;
+  font-size: 4rem;
+  font-family: 'just-sans-m';
+}
+
+.wave-class {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  z-index: 6;
+}

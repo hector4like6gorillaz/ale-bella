@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import OurDescription from 'src/components/landing-components/description/OurDescription'
 import ShowVideo from 'src/components/video/ShowVideo'
 import style from './landing.module.scss'
@@ -10,14 +10,15 @@ import CellPhonesInfo from 'src/components/landing-components/cell-info/CellPhon
 import Challenges from 'src/components/landing-components/challenges/Challenges'
 import Testimonial from 'src/components/landing-components/testimonials/Testimonial'
 import Contact from 'src/components/landing-components/contact/Contact'
+import PictureBackground from 'src/components/girlsBackground/PictureBackground'
+import { getPokemonById } from 'src/services/pokemon/pokemon-services'
+import { IPokeInfo } from 'src/interfaces/pokemon-interface'
 
 const LandingModule = () => {
   return (
     <MainLayout>
       <Fragment>
-        <div className={`${style['div-backgroun-img']}`}>
-          <img className={`${style['img-properties']}`} src={back} />
-        </div>
+        <PictureBackground backImg={back} />
         <div className={`${style['div-container-body']}`}>
           <ShowVideo />
           <OurDescription />

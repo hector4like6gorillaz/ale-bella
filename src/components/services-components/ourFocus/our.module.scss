@@ -1,0 +1,28 @@
+@import 'src/styles/colors.scss';
+
+.our-focus-container {
+  width: 100%;
+  padding-inline: 15rem;
+  padding-block: 4rem;
+  background: white;
+}
+.div-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.p-title {
+  color: $primary_300;
+  font-family: 'prata';
+  font-size: 1.5rem;
+}
+
+.p-content {
+  font-size: 2rem;
+}
+
+.div-button-container {
+  margin-top: 2rem;
+}

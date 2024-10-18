@@ -3,18 +3,20 @@ import style from './navbar.module.scss'
 import Button from '../button/Button'
 import logo from 'src/assets/logos/ale-logo.png'
 import { Bars3Icon } from '@heroicons/react/24/outline'
+import { useNavigate } from 'react-router-dom'
 
 const NavBar = () => {
+  const navigate = useNavigate()
   const menu = [
     { name: 'Home', link: '/' },
     { name: 'Work', link: '/' },
-    { name: 'Services', link: '/' },
+    { name: 'Services', link: '/services' },
     { name: 'About', link: '/' },
     { name: 'Insignts', link: '/' },
   ]
 
   return (
-    <div className ={`${style['big-container']}`}>
+    <div className={`${style['big-container']}`}>
       <div className={`${style['container-navbar']}`}>
         <div className={`${style['img-logo-container']}`}>
           <img src={logo} className={`${style['img-logo']}`} />
@@ -23,7 +25,9 @@ const NavBar = () => {
           {menu.map((item, index) => {
             return (
               <Fragment key={index}>
-                <p className={`${style['p-menu-option']}`}>{item.name} </p>
+                <p className={`${style['p-menu-option']}`} onClick={() => navigate(item.link)}>
+                  {item.name}{' '}
+                </p>
               </Fragment>
             )
           })}
