@@ -1,7 +1,7 @@
 @import 'src/styles/colors.scss';
 
 .container-banner-top {
-  height: 35rem;
+  height: 25rem;
   position: relative;
 }
 
@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-inline: 15rem;
+  padding-inline: 1rem;
 }
 
 .div-titles-container {
@@ -44,7 +44,7 @@
 
 .h3-title {
   color: white;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-family: 'just-sans-m';
 }
 
@@ -54,4 +54,39 @@
   right: 0;
   bottom: -2px;
   z-index: 6;
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+  .container-banner-top {
+    height: 25rem;
+  }
+  .background-black-container {
+    padding-inline: 5rem;
+  }
+  .h3-title {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .container-banner-top {
+    height: 35rem;
+  }
+
+  .background-black-container {
+    padding-inline: 15rem;
+  }
+  .h3-title {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1920px) {
+  .container-banner-top {
+    height: 35rem;
+  }
+  .background-black-container {
+    padding-inline: 15rem;
+  }
+  .h3-title {
+    font-size: 4rem;
+  }
 }

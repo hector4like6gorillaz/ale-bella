@@ -6,11 +6,13 @@ import OurFocus from 'src/components/services-components/ourFocus/OurFocus'
 import MainLayout from 'src/HOC/MainLayout/MainLayout'
 import back from 'src/assets/ellas.jpeg'
 import WhatWeDo from 'src/components/landing-components/what-we-do/WhatWeDo'
+import Anounce from 'src/components/anounce/Anounce'
 
 const ServicesModule = () => {
   return (
     <MainLayout>
       <Fragment>
+        <Anounce />
         <BannerTop />
         <OurFocus />
         <PictureBackground backImg={back} />

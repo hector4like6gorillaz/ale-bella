@@ -2,8 +2,8 @@
 
 .our-focus-container {
   width: 100%;
-  padding-inline: 15rem;
-  padding-block: 4rem;
+  padding-inline: 1rem;
+  padding-block: 2rem;
   background: white;
 }
 .div-container {
@@ -25,4 +25,23 @@
 
 .div-button-container {
   margin-top: 2rem;
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+  .our-focus-container {
+    padding-inline: 5rem;
+    padding-block: 2rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .our-focus-container {
+    padding-inline: 15rem;
+    padding-block: 4rem;
+  }
+}
+@media (min-width: 1920px) {
+  .our-focus-container {
+    padding-inline: 15rem;
+    padding-block: 4rem;
+  }
 }
