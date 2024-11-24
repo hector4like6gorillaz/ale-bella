@@ -1,7 +1,8 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import Footer from 'src/components/footer/Footer'
-import NavBar from 'src/components/navBar/NavBar'
+
+import NavBarFinal from 'src/components/NavBarFinal/NavBarFinal'
 //import Footer from 'src/components/footer/Footer'
 //import FloatingNav from 'src/components/nav-floating/FloatingNav'
 
@@ -19,7 +20,10 @@ const MainLayout = ({
   }, [pathname])
   return (
     <div>
+      {/*
       <NavBar />
+       */}
+      <NavBarFinal />
       {/*
       <FloatingNav />
        */}
