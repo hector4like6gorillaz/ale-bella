@@ -1,7 +1,6 @@
 import AleSVG from 'src/assets/logos/ale'
 import style from './nav.module.scss'
 import Button from '../button/Button'
-import { Bars3Icon } from '@heroicons/react/24/outline'
 import { useNavigate } from 'react-router-dom'
 
 const NavBarFinal = () => {
@@ -28,6 +27,12 @@ const NavBarFinal = () => {
         />
       </div>
       <div className={`${style['container-nav-right-movile']}`}>
+        <p
+          onClick={() => navigate('/services')}
+          className={`${style['p-navbar']} ${style['cursor-pointer']}`}
+        >
+          Services
+        </p>
         <Button
           onClick={() => navigate('/services')}
           size='s'
@@ -35,9 +40,6 @@ const NavBarFinal = () => {
           theme='secondary'
           rounded
         />
-        <div className={`${style['burguer-div']}`}>
-          <Bars3Icon className={`${style['icon-bars']}`} />
-        </div>
       </div>
     </div>
   )
