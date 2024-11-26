@@ -1,7 +1,7 @@
 @import 'src/styles/colors.scss';
 
 .container-banner-top {
-  height: 25rem;
+  height: 80vh;
   position: relative;
 }
 
@@ -32,6 +32,10 @@
 
 .div-titles-container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 1500px;
 }
 
@@ -39,7 +43,8 @@
   color: white;
   font-family: 'prata';
   font-size: 1.5rem;
-  color: $primary_300;
+  color: white;
+  text-align: center;
 }
 
 .h3-title {
@@ -58,7 +63,7 @@
 
 @media (min-width: 600px) and (max-width: 1199px) {
   .container-banner-top {
-    height: 25rem;
+    height: 100vh;
   }
   .background-black-container {
     padding-inline: 5rem;
@@ -69,7 +74,7 @@
 }
 @media (min-width: 1200px) and (max-width: 1919px) {
   .container-banner-top {
-    height: 35rem;
+    height: 100vh;
   }
 
   .background-black-container {
