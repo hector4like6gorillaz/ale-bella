@@ -26,6 +26,10 @@ button {
     cursor: not-allowed;
   }
 }
+p {
+  margin: 0;
+  padding: 0;
+}
 
 @mixin center() {
   display: flex;
