@@ -11,6 +11,8 @@
     "cy": "cypress open"
   },
   "dependencies": {
+    "@coreui/coreui": "^5.2.0",
+    "@coreui/react": "^5.4.1",
     "@heroicons/react": "^2.0.18",
     "@reduxjs/toolkit": "^1.8.5",
     "@types/jest": "^29.5.6",
