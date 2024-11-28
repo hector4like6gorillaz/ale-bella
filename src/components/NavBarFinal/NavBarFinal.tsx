@@ -27,12 +27,14 @@ const NavBarFinal = () => {
         />
       </div>
       <div className={`${style['container-nav-right-movile']}`}>
+        {/*
         <p
           onClick={() => navigate('/services')}
           className={`${style['p-navbar']} ${style['cursor-pointer']}`}
         >
           Services
         </p>
+         */}
         <Button
           onClick={() => navigate('/services')}
           size='s'
