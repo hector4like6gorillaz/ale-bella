@@ -8,6 +8,7 @@ import banner from 'src/assets/services/lena.jpg'
 import Anounce from 'src/components/anounce/Anounce'
 import SquareLabel from 'src/components/services-components/square-label/SquareLabel'
 import MyCustomCarousel from 'src/components/carousell-imagenes/MyCustomCarousel'
+import Services from 'src/components/services-components/services/Services'
 
 const ServicesModule = () => {
   return (
@@ -17,6 +18,7 @@ const ServicesModule = () => {
         <BannerTop backgroundImg={banner} />
 
         <SquareLabel />
+        <Services />
         <MyCustomCarousel />
         {/*
         <OurFocus />
