@@ -15,7 +15,10 @@ const MyCustomCarousel = () => {
             <div className={`${style['back-black']}`}>
               <div className={`${style['content-carousel']}`}>
                 <p className={`${style['p-title']}`}>TITULO 1</p>
-                <p className={`${style['p-description']}`}>Descripcion de ejemplo para leer muy ancha para ver que pasa si tengo mucho texto en caso de querer demasiado</p>
+                <p className={`${style['p-description']}`}>
+                  Descripcion de ejemplo para leer muy ancha para ver que pasa si tengo mucho texto
+                  en caso de querer demasiado
+                </p>
               </div>
             </div>
           </div>

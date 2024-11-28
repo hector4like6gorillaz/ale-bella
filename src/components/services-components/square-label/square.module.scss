@@ -17,9 +17,7 @@
 }
 
 .square-show {
-  border: 4px solid $primary_300;
-  padding-inline: 1rem;
-  padding-block: 2rem;
+  //border: 4px solid $primary_300;
 }
 
 .p-label {
@@ -38,17 +36,17 @@
 }
 @media (min-width: 1200px) and (max-width: 1919px) {
   .p-label {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .big-container {
-    padding-inline: 15rem;
+    padding-inline: 10rem;
     padding-block: 6rem;
   }
 }
 @media (min-width: 1920px) {
   .p-label {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .big-container {
     padding-block: 8rem;
