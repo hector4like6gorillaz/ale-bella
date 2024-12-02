@@ -10,14 +10,26 @@ import Challenges from 'src/components/landing-components/challenges/Challenges'
 import Testimonial from 'src/components/landing-components/testimonials/Testimonial'
 import Contact from 'src/components/landing-components/contact/Contact'
 import PictureBackground from 'src/components/girlsBackground/PictureBackground'
+import Button from 'src/components/button/Button'
+import { useNavigate } from 'react-router-dom'
 
 const LandingModule = () => {
+  const navigate = useNavigate()
   return (
     <MainLayout>
       <Fragment>
         <PictureBackground backImg={back} />
         <div className={`${style['div-container-body']}`}>
           <ShowVideo />
+          <div className={`${style['div-services']}`}>
+            <Button
+              label='Services'
+              rounded
+              theme='secondary'
+              size='s'
+              onClick={() => navigate('/services')}
+            />
+          </div>
 
           <OurDescription />
           <div className={`${style['transparent-container']}`}></div>
