@@ -1,6 +1,5 @@
 import { Fragment } from 'react'
 import style from './services.module.scss'
-import { ChevronDoubleDownIcon, MinusIcon } from '@heroicons/react/24/outline'
 
 const Services = () => {
   const servicesInfo = [
