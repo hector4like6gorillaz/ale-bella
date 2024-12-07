@@ -1,4 +1,3 @@
-import { AcademicCapIcon, ArrowDownCircleIcon } from '@heroicons/react/24/outline'
 import style from './our.module.scss'
 import Button from 'src/components/button/Button'
 
@@ -16,24 +15,6 @@ const OurDescription = () => {
         <div className={`${style['container-buttons']}`}>
           <Button label='Get in touch' />
           <Button label='OUR STORY' theme='secondary' />
-        </div>
-        <div className={`${style['marcas-work']}`}>
-          {Array.from({ length: 4 }, (_, index) => {
-            return (
-              <div key={index} className={`${style['mark-container']}`}>
-                <AcademicCapIcon className={`${style['icon-style']}`} />
-              </div>
-            )
-          })}
-        </div>
-        <div className={`${style['marcas-work']}`}>
-          {Array.from({ length: 4 }, (_, index) => {
-            return (
-              <div key={index} className={`${style['mark-container']}`}>
-                <ArrowDownCircleIcon className={`${style['icon-style']}`} />
-              </div>
-            )
-          })}
         </div>
       </div>
     </div>

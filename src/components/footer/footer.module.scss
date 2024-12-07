@@ -9,6 +9,7 @@
   background: white;
   padding-inline: 1rem;
   padding-block: 1rem;
+  width: 100%;
 }
 .div-all-top-container {
   display: flex;
@@ -77,8 +78,8 @@
   }
   .div-all-top-container {
     flex-direction: row;
-    justify-content: space-between;
-    column-gap: 2rem;
+    justify-content: start;
+    column-gap: 5rem;
   }
   .logo-footer-container {
     width: 12rem;
