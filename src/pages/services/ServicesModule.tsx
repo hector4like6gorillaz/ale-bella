@@ -1,4 +1,3 @@
-//import style from './services.module.scss'
 import { Fragment } from 'react'
 import BannerTop from 'src/components/bannerTop/BannerTop'
 import PictureBackground from 'src/components/girlsBackground/PictureBackground'
@@ -20,11 +19,7 @@ const ServicesModule = () => {
         <SquareLabel />
         <Services />
         <MyCustomCarousel />
-        {/*
-        <OurFocus />
-        <WhatWeDo />
-        <div className={`${style['transparent']}`}> </div>
-         */}
+
         <PictureBackground backImg={back} />
       </Fragment>
     </MainLayout>

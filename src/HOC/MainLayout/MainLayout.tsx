@@ -3,8 +3,6 @@ import { useLocation } from 'react-router-dom'
 import Footer from 'src/components/footer/Footer'
 
 import NavBarFinal from 'src/components/NavBarFinal/NavBarFinal'
-//import Footer from 'src/components/footer/Footer'
-//import FloatingNav from 'src/components/nav-floating/FloatingNav'
 
 const MainLayout = ({
   children,
@@ -20,13 +18,7 @@ const MainLayout = ({
   }, [pathname])
   return (
     <div>
-      {/*
-      <NavBar />
-       */}
       <NavBarFinal />
-      {/*
-      <FloatingNav />
-       */}
       {children}
       {showFooter && <Footer />}
     </div>

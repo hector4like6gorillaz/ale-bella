@@ -16,37 +16,6 @@ const menuFooter = [
       { name: 'Locations', link: '' },
     ],
   },
-  {
-    title: 'Services',
-    options: [
-      { name: 'Branding', link: '' },
-      { name: 'Social Media', link: '' },
-      { name: 'Creative Production', link: '' },
-    ],
-  },
-  {
-    title: 'About',
-    options: [
-      { name: 'Our Team', link: '' },
-      { name: 'Culture', link: '' },
-      { name: 'Careers', link: '' },
-    ],
-  },
-  {
-    title: 'Clients',
-    options: [
-      { name: 'Jose Ole', link: '' },
-      { name: 'La Brea Bakery', link: '' },
-    ],
-  },
-  {
-    title: 'Insights',
-    options: [
-      { name: 'Blog', link: '' },
-      { name: 'Digital Grocery', link: '' },
-      { name: 'Influencers', link: '' },
-    ],
-  },
 ]
 const Footer = () => {
   return (
@@ -90,7 +59,7 @@ const Footer = () => {
         <div className={`${style['div-line']}`}></div>
         <div className={`${style['social-media']}`}>
           <p className={`${style['p-derechos']}`}>
-            © 2021 C/C/G. All rights reserved. Made with LOVE in Los Angeles, California
+            © 2021 ALE-BELLA. All rights reserved. Made with LOVE in Los Angeles, California
           </p>
         </div>
       </div>
