@@ -3,7 +3,7 @@ import OptionsFooter from './components/OptionsFooter'
 import style from './footer.module.scss'
 import logo from 'src/assets/logos/ale-logo.png'
 import Input from '../input/Input'
-import { ArrowRightIcon, ClockIcon } from '@heroicons/react/24/outline'
+import { ArrowRightIcon } from '@heroicons/react/24/outline'
 
 const menuFooter = [
   {
