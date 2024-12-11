@@ -12,8 +12,6 @@ const menuFooter = [
       { name: 'Send Inquiry', link: '' },
       { name: 'Email', link: '' },
       { name: 'Call Us', link: '' },
-      { name: 'Influencers', link: '' },
-      { name: 'Locations', link: '' },
     ],
   },
 ]
@@ -28,17 +26,14 @@ const Footer = () => {
             </div>
             <p className={`${style['p-stay']}`}>Stay in the Loop</p>
             <p>
-              Get occasional updates about our insights,
-              <br /> content, news, and events.
+              Get updates about our insights,
+              <br />
+              content and news.
             </p>
             <Input placeHolder='Email' Icon={ArrowRightIcon} onClick={() => console.log('Holo')} />
             <div>
-              <p className={`${style['p-small']}`}>
-                You'll receive emails about C/C/G news, and free marketing resources.
-              </p>
-              <p className={`${style['p-small']}`}>
-                You can unsubscribe from these communications at any time
-              </p>
+              <p className={`${style['p-small']}`}></p>
+              <p className={`${style['p-small']}`}></p>
             </div>
           </div>
           <div className={`${style['container-options']}`}>
@@ -52,9 +47,11 @@ const Footer = () => {
           </div>
         </div>
         <div className={`${style['social-media']}`}>
+          {/*
           <ClockIcon className={`${style['icon-prop']}`} />
           <ClockIcon className={`${style['icon-prop']}`} />
           <ClockIcon className={`${style['icon-prop']}`} />
+           */}
         </div>
         <div className={`${style['div-line']}`}></div>
         <div className={`${style['social-media']}`}>

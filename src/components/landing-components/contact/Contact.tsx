@@ -8,7 +8,7 @@ const Contact = () => {
     <div className={`${style['big-container']}`}>
       <div className={`${style['container-contact']}`}>
         <div className={`${style['cuestionaire-left']}`}>
-          <h3 className={`${style['h3-title']}`}>Let's Talk.</h3>
+          <h3 className={`${style['h3-title']}`}>Chat it up.</h3>
           <p className={`${style['p-content']}`}>
             Ready to accelerate your company's growth?
             <br />
@@ -21,7 +21,6 @@ const Contact = () => {
           </div>
           <div className={`${style['div-flex-3-contact']}`}>
             <Input placeHolder='Website' />
-            <Input placeHolder='Choose' />
           </div>
           <div>
             <Button label='Submit' />
