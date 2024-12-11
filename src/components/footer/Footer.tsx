@@ -47,9 +47,11 @@ const Footer = () => {
           </div>
         </div>
         <div className={`${style['social-media']}`}>
+          {/*
           <ClockIcon className={`${style['icon-prop']}`} />
           <ClockIcon className={`${style['icon-prop']}`} />
           <ClockIcon className={`${style['icon-prop']}`} />
+           */}
         </div>
         <div className={`${style['div-line']}`}></div>
         <div className={`${style['social-media']}`}>
