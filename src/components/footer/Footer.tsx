@@ -1,10 +1,11 @@
-import { Fragment } from 'react'
-import OptionsFooter from './components/OptionsFooter'
+//import { Fragment } from 'react'
+//import OptionsFooter from './components/OptionsFooter'
 import style from './footer.module.scss'
 import logo from 'src/assets/logos/ale-logo.png'
 import Input from '../input/Input'
 import { ArrowRightIcon } from '@heroicons/react/24/outline'
 
+/*
 const menuFooter = [
   {
     title: 'Contact',
@@ -15,6 +16,7 @@ const menuFooter = [
     ],
   },
 ]
+*/
 const Footer = () => {
   return (
     <div className={`${style['big-container']}`}>
@@ -37,6 +39,7 @@ const Footer = () => {
             </div>
           </div>
           <div className={`${style['container-options']}`}>
+            {/*
             {menuFooter.map((item, index) => {
               return (
                 <Fragment key={`${item.title} ${index}`}>
@@ -44,6 +47,7 @@ const Footer = () => {
                 </Fragment>
               )
             })}
+                  */}
           </div>
         </div>
         <div className={`${style['social-media']}`}>

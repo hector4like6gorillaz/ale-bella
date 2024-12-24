@@ -17,7 +17,7 @@ const Services = () => {
       ],
     },
     {
-      title: 'Shopify Websites',
+      title: 'Websites',
       content: [
         'Desktop / Mobile Website Designs',
         'Custom / Theme Based Websites',
@@ -67,7 +67,28 @@ const Services = () => {
     },
     {
       title: 'Packaging',
-      content: ['Packaging Design', '3D Design', 'Packaging Mockups', 'Print Ready Dielines'],
+      content: [
+        'Packaging Design',
+        'Packaging Sustainability Strategy',
+        '3D Design',
+        'Premium Unboxing Experience',
+        'Packaging Mockups',
+        'Custom Packaging for Global Markets',
+        'Print Ready Dielines',
+      ],
+    },
+    {
+      title: 'AI-Powered Services',
+      content: [
+        'AI-Powered Customer Segmentation',
+        'AI-Powered Pricing Strategies',
+        'AI Chatbots for Customer Support',
+        'Conversational Marketing',
+        'Social Media Monitoring',
+        'Automated Campaigns',
+        'AI-Powered Influencer Identification',
+        'Campaign Performance Tracking',
+      ],
     },
   ]
   return (
