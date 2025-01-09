@@ -20,7 +20,7 @@
   bottom: 0;
   top: 0;
   margin: auto;
-  background: #00000080;
+  background: rgb(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,22 +32,22 @@
 }
 
 .p-title {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: white;
   text-align: center;
 }
 .p-description {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: white;
   text-align: center;
 }
 
 @media (min-width: 600px) and (max-width: 1199px) {
   .p-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .p-description {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .content-carousel {
     width: 100%;
@@ -56,10 +56,10 @@
 }
 @media (min-width: 1200px) and (max-width: 1919px) {
   .p-title {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
   .p-description {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
   .content-carousel {
     width: 100%;
@@ -68,10 +68,10 @@
 }
 @media (min-width: 1920px) {
   .p-title {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
   .p-description {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
   .content-carousel {
     width: 100%;
