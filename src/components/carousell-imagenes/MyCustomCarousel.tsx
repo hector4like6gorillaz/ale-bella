@@ -1,19 +1,13 @@
 import style from './carousel.module.scss'
 import { CCarousel, CCarouselItem, CImage } from '@coreui/react'
-import ho1 from 'src/assets/carousel/hotel1.jpg'
-import ho2 from 'src/assets/carousel/hotel2.jpg'
-import ho3 from 'src/assets/carousel/hotel3.jpg'
-import ho4 from 'src/assets/carousel/hotel4.webp'
+import ho1 from 'src/assets/carousel/branding.jpg'
+import ho2 from 'src/assets/carousel/website.jpg'
+import ho3 from 'src/assets/carousel/packaginDesign.jpg'
+import ho4 from 'src/assets/carousel/designServices.jpg'
+import ho5 from 'src/assets/carousel/emailMarketing.jpg'
+import ho6 from 'src/assets/carousel/paidMedia.jpg'
+import ho7 from 'src/assets/carousel/socialMedia-min.jpg'
 
-/*
-Branding
-Shopify websites
-Design services
-Email marketing and automation
-Paid media & advertising
-Social media management
-Packing
-*/
 const carouselInfo = [
   {
     alt: 'slide 1',
@@ -27,14 +21,14 @@ const carouselInfo = [
     title: 'WEBSITE',
     content:
       'Our web design services, focused on both visuals and conversions, kick off with a two-week planning phase that includes a website questionnaire, UX research, content strategy, brainstorming, and the creation of at least two website design concepts. Once a concept is finalized, we move forward with desktop and mobile page designs in stages, presenting them via video calls. All designs are shared through links with commenting tools, and every page, view, and hover state goes through multiple rounds of thoughtful client feedback. After final approval, we’ll brief your web developer and assist with QA to ensure everything runs smoothly.',
-    image: ho3,
+    image: ho2,
   },
   {
     alt: 'slide 3',
     title: 'PACKAGING DESIGN',
     content:
       'This eye-catching packaging design project begins with a two-week planning phase that includes a product questionnaire, messaging strategy, brainstorming, research, and the development of at least two packaging concepts based on your business goals. Once a concept is chosen, we proceed to the design phase, presenting deliverables through video calls. All designs are shared via links with built-in commenting tools. Once everything is approved, we’ll liaise with your printer and assist with packaging proofs for final approval.',
-    image: ho2,
+    image: ho3,
   },
   {
     alt: 'slide 4',
@@ -48,21 +42,21 @@ const carouselInfo = [
     title: 'EMAIL MARKETING & AUTOMATION',
     content:
       "Our process starts with a discovery phase, gathering key insights through a questionnaire, audience research, and content planning. This helps us design email templates that align with your brand and audience, we focus on aesthetics and conversion, ensuring responsive designs that work seamlessly on desktop and mobile (with a strong emphasis on mobile, as it drives much of our clients' email traffic). Once automation is set up, we ensure smooth integration and offer ongoing support with optimizations and A/B testing to keep your campaigns performing at their best.",
-    image: ho4,
+    image: ho5,
   },
   {
     alt: 'slide 6',
     title: 'PAID MEDIA & ADVERTISING',
     content:
       "Our paid media services begin with a strategic planning phase, where we align your goals and audience insights to create a tailored advertising plan. We design targeted ads for search and social campaigns, focusing on conversion and ROI. Once approved, we launch across Google, Facebook, and Instagram, ensuring ads are optimized for both desktop and mobile. We present the setup and creatives via video calls, refining them based on your feedback. After launch, we continuously monitor and optimize the campaign, running A/B tests and adjusting targeting to maximize performance. You'll have full access to analytics, with ongoing support to keep your campaigns on track and delivering results.",
-    image: ho4,
+    image: ho6,
   },
   {
     alt: 'slide 7',
     title: 'SOCIAL MEDIA MARKETING & MANAGEMENT',
     content:
       'We begin with a two-week strategy phase, aligning your brand goals and audience to create a custom plan. Once approved, we design engaging content, visuals, copy, or videos, optimized for desktop and mobile. We share content calendars and creatives, refining them based on your feedback. You’ll get regular performance reports, tracking engagement, impressions, and conversions. After launch, we continuously optimize the strategy to maximize results and keep your social presence aligned with your goals.',
-    image: ho4,
+    image: ho7,
   },
 ]
 
