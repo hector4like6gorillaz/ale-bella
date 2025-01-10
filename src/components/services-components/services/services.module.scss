@@ -65,11 +65,16 @@
     font-size: 3rem;
   }
   .big-container-services {
-    padding-inline: 15rem;
+    padding-inline: 10rem;
   }
   .services-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+  }
+  .service-information {
+    padding-inline: 0.5rem;
+    padding-block: 1rem;
   }
 }
 @media (min-width: 1920px) {
@@ -77,10 +82,14 @@
     font-size: 3rem;
   }
   .big-container-services {
-    padding-inline: 15rem;
+    padding-inline: 10rem;
   }
   .services-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .service-information {
+    padding-inline: 0.5rem;
+    padding-block: 1rem;
   }
 }
