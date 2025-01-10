@@ -1,6 +1,6 @@
 import Button from 'src/components/button/Button'
 import style from './cell.module.scss'
-import video from 'src/assets/video/limon.mp4'
+import video from 'src/assets/video/mezcal.mp4'
 
 const CellPhonesInfo = () => {
   return (
