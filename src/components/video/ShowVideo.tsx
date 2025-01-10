@@ -1,13 +1,30 @@
 import style from './show.module.scss'
 import video from 'src/assets/video/landing.mp4'
 import Wave from 'src/assets/hondas/Wave'
+import { useEffect, useRef } from 'react'
 
 const ShowVideo = ({ showWave = true }: { showWave?: boolean }) => {
+  const videoRef = useRef<any>(null)
+  useEffect(() => {
+    const video = videoRef.current
+    if (video) {
+      video.play().catch(() => {
+        console.log('Reproducción automática bloqueada, esperando interacción')
+      })
+    }
+  }, [])
   return (
     <div className={`${style['big-container']}`}>
       <div className={`${style['video-container']}`}>
         <div className={`${style['container-video-play']}`}>
-          <video className={`${style['video-label']}`} autoPlay muted loop>
+          <video
+            ref={videoRef}
+            className={`${style['video-label']}`}
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
             <source src={video} type='video/mp4' />
           </video>
         </div>
