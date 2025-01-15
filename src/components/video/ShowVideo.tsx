@@ -26,6 +26,7 @@ const ShowVideo = ({ showWave = true }: { showWave?: boolean }) => {
             playsInline
           >
             <source src={video} type='video/mp4' />
+            <source src={video} type='video/webm' />
           </video>
         </div>
         {showWave && <Wave className={`${style['bottom-class-wave']}`} />}

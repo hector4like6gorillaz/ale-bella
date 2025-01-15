@@ -2,6 +2,10 @@ import style from './our.module.scss'
 import Button from 'src/components/button/Button'
 
 const OurDescription = () => {
+  const tapButton = () => {
+    window.open('https://calendar.app.google/smjdRrGA95W6BRVr8', '_blank')
+  }
+
   return (
     <div className={`${style['big-container']}`}>
       <div className={`${style['container-our']}`}>
@@ -13,8 +17,7 @@ const OurDescription = () => {
         </p>
 
         <div className={`${style['container-buttons']}`}>
-          <Button label='Get in touch' />
-          <Button label='OUR STORY' theme='secondary' />
+          <Button label='Get in touch' onClick={() => tapButton()} />
         </div>
       </div>
     </div>
