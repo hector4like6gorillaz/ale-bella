@@ -10,7 +10,7 @@ const NavBarFinal = () => {
       <AleSVG onClick={() => navigate('/')} className={style['svg-logo']} />
 
       <div className={`${style['container-nav-right']}`}>
-        <p className={`${style['p-navbar']}`}>Digital marketing agency</p>
+        <p className={`${style['p-navbar']}`}></p>
         <div className={`${style['circle-black']}`}></div>
         <p
           onClick={() => navigate('/services')}
